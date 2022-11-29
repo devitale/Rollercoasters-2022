@@ -7,6 +7,7 @@
 	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/six_flags.css">
 	<title>Disney Land</title>
 </head>
 
@@ -14,33 +15,34 @@
 	<header>
 		<div class="skip"><a href="">Skip to Main Content</a></div>
 		<nav>
-			<ul>
+			<ul class = "fl">
 				<li class="active"><a href = "index.html" >Disney Land</a></li>
 				<li><a href = "disney_world.html">Disney World</a></li>
 				<li><a href = "universal.html">Universal Studios</a></li>
 				<li><a href = "sixflags.html">Six Flags</a></li>
 			</ul>
 		  </nav>
-		  <h1>RollerCoasters</h1>
+		  <h1 class = "title">RollerCoasters</h1>
 	  </header>
 
 	<main>
 		<p>Six Flags is where I go to have fun. Here is a sample video</p>
+		<button type="submit" onClick="refreshPage()">Refresh Button</button>
+		<button  id = "play">Play Video</button>
+		<button  id = "pause">Pause Video</button>
+		<button onClick="location.href='https://www.sixflags.com/national/reprint'">Ticket Prices</button>
         <figure>
-
             <video class = "video" 
                 width="640" 
                 height="360" 
                 id="player1" 
                 preload="none"
                 src="images/roller.mov">
-                  
                 <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">	
                       Your browser does not support HTML5 video.
             </video>
             <figcaption>[Six Flags Big Womper Ride]</figcaption>
          </figure> 
-        
 
 	</main>
 

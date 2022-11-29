@@ -1,0 +1,21 @@
+p { background-color: #004060; color: #ffffff; padding: 4px 8px; }
+footer{
+    font-size: 20px;
+    text-align: middle;
+    padding-top:15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+}
+
+.title {
+     text-align:center;
+     border-top: 5px solid;
+     border-image:   linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5;  
+}
+
+.dgr{
+	text-align: center;
+	font-style: Cursive;
+	background-color: #d10e0e;
+}
