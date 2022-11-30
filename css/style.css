@@ -98,6 +98,10 @@ html{
       background-attachment: initial;
     }
   }
+
+  nav a{
+    border: 2px solid black;
+  }
   
   
   
@@ -121,15 +125,31 @@ html{
   :focus{
     outline: 2px solid;
   }
+  .active a{
+      border: 2px solid red;
+  }
+    
+  
+  .fl{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
   
 
-  
-  
-  @media screen and (max-width: 800px){
+  @media screen and (min-width: 600px){
     .fl{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 15px;
+      justify-items: center;
       align-items: center;
+    }
+  }
+
+  @media screen and (min-width: 900px){
+    .fl{
+      display: inline;
     }
   }
