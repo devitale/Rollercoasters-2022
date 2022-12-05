@@ -43,7 +43,7 @@ p{
         flex-direction:column;
         align-items: center;
     }
-    .flex_css ul:nth-child(2n){
+    .flex_css div:nth-child(2n){
         display: flex;
     }
 }
@@ -61,7 +61,7 @@ p{
         flex-wrap: wrap;
         justify-content: center;
     }
-    ul img {  
+    div img {  
     animation: 2s ease-out 0s 1 mymove;
     } 
 
@@ -81,7 +81,7 @@ p{
   }
     
 @media (prefers-reduced-motion) {
-    ul img{
+    div img{
       animation:none;
     }
     img{
