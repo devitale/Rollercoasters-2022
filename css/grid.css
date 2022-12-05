@@ -4,9 +4,6 @@ img{
     width: 200px;
     height: 200px;
 }
-img:hover, *:focus{
-    box-shadow: 10px 10px 5px rgb(105, 121, 106);
-}
 
 p{
     padding: 0px 40px 40px 40px
@@ -37,6 +34,9 @@ footer{
         grid-template-columns: 1fr 1fr;
         row-gap: 15px;
         justify-items: center;
+    }
+    img:hover, *:focus{
+        box-shadow: 10px 10px 5px rgb(105, 121, 106);
     }
     img{
         border: 10px solid black;

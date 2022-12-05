@@ -18,9 +18,7 @@ img{
     width: 700px;
     height: 400px;
 }
-img:hover, *:focus{
-    box-shadow: 10px 10px 5px rgb(20, 218, 26);
-}
+
 
 p{
     padding: 0px 40px 40px 40px
@@ -30,12 +28,15 @@ p{
     border-top: 5px solid;
     border-image:   linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5;  
 }
-@media screen and (min-width: 500px){
+@media screen and (min-width: 600px){
     img{
         border: 10px solid rgb(104, 169, 18);
         margin: 10px;
         width: 400px;
         height: 400px;
+    }
+    img:hover, *:focus{
+        box-shadow: 10px 10px 5px rgb(20, 218, 26);
     }
     .flex_css{
         display:flex;
@@ -46,7 +47,7 @@ p{
         display: flex;
     }
 }
-@media screen and (min-width: 800px){
+@media screen and (min-width: 900px){
     img{
         border: 10px solid grey;
         margin: 10px;
@@ -60,6 +61,34 @@ p{
         flex-wrap: wrap;
         justify-content: center;
     }
+    @keyframes mymove {
+        from {top: 0px;}
+        to {top: 200px;}
+      }
+    ul img {  
+    animation: 2s ease-out 0s 1 mymove;
+    } 
+
+    img{ 
+    transition: transform .2s;
+    } 
+
+    img:hover { 
+    transform: scale(1.25); 
+      }
+      
 
 }
     
+@media (prefers-reduced-motion) {
+    ul img{
+      animation:none;
+    }
+    img{
+      transition:none;
+    }
+    img{
+      transform:none;
+    }
+
+  }
