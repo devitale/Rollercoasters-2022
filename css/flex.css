@@ -61,10 +61,6 @@ p{
         flex-wrap: wrap;
         justify-content: center;
     }
-    @keyframes mymove {
-        from {top: 0px;}
-        to {top: 200px;}
-      }
     ul img {  
     animation: 2s ease-out 0s 1 mymove;
     } 
@@ -79,6 +75,10 @@ p{
       
 
 }
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
     
 @media (prefers-reduced-motion) {
     ul img{
@@ -87,7 +87,7 @@ p{
     img{
       transition:none;
     }
-    img{
+    img:hover{
       transform:none;
     }
 
